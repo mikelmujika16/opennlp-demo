@@ -57,8 +57,6 @@ public class ChunkerMain
 		}
 		catch( IOException e )
 		{
-			// Model loading failed, handle the error
-			e.printStackTrace();
 		}
 		finally
 		{

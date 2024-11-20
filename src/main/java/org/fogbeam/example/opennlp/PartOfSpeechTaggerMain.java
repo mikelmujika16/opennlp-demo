@@ -39,8 +39,6 @@ public class PartOfSpeechTaggerMain
 		}
 		catch( IOException e )
 		{
-			// Model loading failed, handle the error
-			e.printStackTrace();
 		}
 		finally
 		{
@@ -52,7 +50,6 @@ public class PartOfSpeechTaggerMain
 				}
 				catch( IOException e )
 				{
-					e.printStackTrace();
 				}
 			}
 		}

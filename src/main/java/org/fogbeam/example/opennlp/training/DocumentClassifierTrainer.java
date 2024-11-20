@@ -34,8 +34,6 @@ public class DocumentClassifierTrainer
 		}
 		catch( IOException e )
 		{
-			// Failed to read or parse training data, training failed
-			e.printStackTrace();
 		}
 		finally
 		{
@@ -47,10 +45,6 @@ public class DocumentClassifierTrainer
 				}
 				catch( IOException e )
 				{
-					// Not an issue, training already finished.
-					// The exception should be logged and investigated
-					// if part of a production system.
-					e.printStackTrace();
 				}
 			}
 		}
@@ -64,8 +58,6 @@ public class DocumentClassifierTrainer
 		}
 		catch( IOException e )
 		{
-			// Failed to save model
-			e.printStackTrace();
 		}
 		finally
 		{
@@ -77,9 +69,6 @@ public class DocumentClassifierTrainer
 				}
 				catch( IOException e )
 				{
-					// Failed to correctly save model.
-					// Written model might be invalid.
-					e.printStackTrace();
 				}
 			}
 		}

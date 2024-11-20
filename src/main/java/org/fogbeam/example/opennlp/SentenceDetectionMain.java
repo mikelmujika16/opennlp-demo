@@ -38,7 +38,6 @@ public class SentenceDetectionMain
 		}
 		catch( IOException e )
 		{
-			e.printStackTrace();
 		}
 		finally
 		{
@@ -48,7 +47,6 @@ public class SentenceDetectionMain
 				}
 				catch( IOException e )
 				{
-					e.printStackTrace();
 				}
 			}
 
@@ -58,7 +56,6 @@ public class SentenceDetectionMain
 				}
 				catch( IOException e )
 				{
-					e.printStackTrace();
 				}
 
 			

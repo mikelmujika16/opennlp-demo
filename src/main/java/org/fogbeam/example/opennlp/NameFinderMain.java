@@ -53,7 +53,6 @@ public class NameFinderMain
 		}
 		catch( IOException e )
 		{
-			e.printStackTrace();
 		}
 		finally
 		{
@@ -63,7 +62,6 @@ public class NameFinderMain
 				}
 				catch( IOException e )
 				{
-					e.printStackTrace();
 				}
 
 		}

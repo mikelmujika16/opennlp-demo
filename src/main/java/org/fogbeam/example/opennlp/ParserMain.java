@@ -39,7 +39,6 @@ public class ParserMain
 		}
 		catch( IOException e )
 		{
-			e.printStackTrace();
 		}
 		finally
 		{
@@ -49,7 +48,6 @@ public class ParserMain
 				}
 				catch( IOException e )
 				{
-					e.printStackTrace();
 				}
 
 		}

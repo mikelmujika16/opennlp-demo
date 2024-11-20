@@ -46,7 +46,6 @@ public class TokenizerMain
                 }
             }
         } catch (IOException e) {
-            e.printStackTrace();
         }
     }
 }

@@ -31,7 +31,6 @@ public class DocumentClassifierMain
 		}
 		catch( Exception e )
 		{
-			e.printStackTrace();
 			
 		}
 		finally
