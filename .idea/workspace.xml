@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e72145c-8deb-4a44-b1fc-043d04f440f0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/spring-core-5.2.9.RELEASE.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fogbeam/example/opennlp/NameFinderMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fogbeam/example/opennlp/NameFinderMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fogbeam/example/opennlp/ParserMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fogbeam/example/opennlp/ParserMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fogbeam/example/opennlp/PartOfSpeechTaggerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fogbeam/example/opennlp/PartOfSpeechTaggerMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/fogbeam/example/opennlp/SentenceDetectionMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fogbeam/example/opennlp/SentenceDetectionMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/fogbeam/example/opennlp/TokenizerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fogbeam/example/opennlp/TokenizerMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
