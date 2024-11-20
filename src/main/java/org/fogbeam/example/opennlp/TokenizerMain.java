@@ -1,63 +1,56 @@
-
 package org.fogbeam.example.opennlp;
 
-
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
 
 import opennlp.tools.tokenize.Tokenizer;
 import opennlp.tools.tokenize.TokenizerME;
 import opennlp.tools.tokenize.TokenizerModel;
 
-
 public class TokenizerMain
 {
-	public static void main( String[] args ) throws Exception
-	{
-		
-		// the provided model
-		// InputStream modelIn = new FileInputStream( "models/en-token.bin" );
+    public static void main( String[] args ) throws Exception
+    {
+        if (args.length < 2) {
+            System.out.println("Usage: TokenizerMain <output-file> <input-file1> <input-file2> ...");
+            return;
+        }
 
+        String outputFilePath = args[0];
+        String[] inputFilePaths = Arrays.copyOfRange(args, 1, args.length);
 		
-		// the model we trained
-		InputStream modelIn = new FileInputStream( "models/en-token.model" );
-		
-		try
-		{
-			TokenizerModel model = new TokenizerModel( modelIn );
-		
-			Tokenizer tokenizer = new TokenizerME(model);
-			
-				/* note what happens with the "three depending on which model you use */
-			String[] tokens = tokenizer.tokenize
-					(  "A ranger journeying with Oglethorpe, founder of the Georgia Colony, " 
-							+ " mentions \"three Mounts raised by the Indians over three of their Great Kings" 
-							+ " who were killed in the Wars.\"" );
-			
-			for( String token : tokens )
-			{
-				System.out.println( token );
-			}
-			
-		}
-		catch( IOException e )
-		{
-			e.printStackTrace();
-		}
-		finally
-		{
-			if( modelIn != null )
-			{
-				try
-				{
-					modelIn.close();
-				}
-				catch( IOException e )
-				{
-				}
-			}
-		}
-		System.out.println( "\n-----\ndone" );
-	}
+
+        // Load the trained model
+        try (InputStream modelIn = new FileInputStream("models/en-token.model")) {
+            TokenizerModel model = new TokenizerModel(modelIn);
+            Tokenizer tokenizer = new TokenizerME(model);
+
+            try (BufferedWriter writer = new BufferedWriter(new FileWriter(outputFilePath))) {
+                for (String inputFilePath : inputFilePaths) {
+                    List<String> lines = Files.readAllLines(Paths.get(inputFilePath));
+                    for (String line : lines) {
+                        String[] tokens = tokenizer.tokenize(line);
+                        for (String token : tokens) {
+                            writer.write(token);
+                            writer.write(" ");
+                        }
+                        writer.newLine();
+                    }
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }
