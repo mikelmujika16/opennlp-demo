@@ -28,7 +28,7 @@ public class ParserMain
 			
 			String sentence = "The quick brown fox jumps over the lazy dog .";
 			
-			Parse topParses[] = ParserTool.parseLine(sentence, parser, 1);			
+			Parse[] topParses = ParserTool.parseLine(sentence, parser, 1);
 			
 			Parse parse = topParses[0];
 			
@@ -43,16 +43,15 @@ public class ParserMain
 		}
 		finally
 		{
-			if( modelIn != null )
-			{
 				try
 				{
 					modelIn.close();
 				}
 				catch( IOException e )
 				{
+					e.printStackTrace();
 				}
-			}
+
 		}
 		
 		

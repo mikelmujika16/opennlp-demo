@@ -26,7 +26,7 @@ public class SentenceDetectionMain
 			
 			String demoData = convertStreamToString( demoDataIn );
 			
-			String sentences[] = sentenceDetector.sentDetect( demoData );
+			String[] sentences = sentenceDetector.sentDetect( demoData );
 			
 			for( String sentence : sentences )
 			{
@@ -42,31 +42,27 @@ public class SentenceDetectionMain
 		}
 		finally
 		{
-			if( modelIn != null )
-			{
 				try
 				{
 					modelIn.close();
 				}
 				catch( IOException e )
 				{
+					e.printStackTrace();
 				}
 			}
-			
-			
-			if( demoDataIn != null )
-			{
+
 				try
 				{
 					demoDataIn.close();
 				}
 				catch( IOException e )
 				{
+					e.printStackTrace();
 				}
-			}
+
 			
-			
-		}
+
 		
 		
 		System.out.println( "done" );

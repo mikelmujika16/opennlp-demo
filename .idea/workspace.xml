@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e72145c-8deb-4a44-b1fc-043d04f440f0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/in/in.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/hugo.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/out.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" afterPath="$PROJECT_DIR$/.project" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/spring-core-5.2.9.RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fogbeam/example/opennlp/NameFinderMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fogbeam/example/opennlp/NameFinderMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fogbeam/example/opennlp/ParserMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fogbeam/example/opennlp/ParserMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fogbeam/example/opennlp/PartOfSpeechTaggerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fogbeam/example/opennlp/PartOfSpeechTaggerMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/fogbeam/example/opennlp/SentenceDetectionMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fogbeam/example/opennlp/SentenceDetectionMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/fogbeam/example/opennlp/TokenizerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/fogbeam/example/opennlp/TokenizerMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,22 +22,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "mikelmujika16"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;mikelmujika16&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/mikelmujika16/opennlp-demo.git",
-    "accountId": "a3b74536-1cb5-4f0f-99d9-50c84adecb95"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/mikelmujika16/opennlp-demo.git&quot;,
+    &quot;accountId&quot;: &quot;a3b74536-1cb5-4f0f-99d9-50c84adecb95&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 0
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2p7isW1aPqIPInmyRTmgh6qk5RJ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -47,12 +47,18 @@
   "keyToString": {
     "Application.TokenizerMain.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Mikel/Documents/GitHub/opennlp-demo/docs/spring-core-5.2.9.RELEASE.jar",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Mikel\Documents\GitHub\opennlp-demo\docs" />
       <recent name="C:\Users\Mikel\Documents\GitHub\opennlp-demo\out" />
       <recent name="C:\Users\Mikel\Documents\GitHub\opennlp-demo\in" />
     </key>

@@ -19,7 +19,6 @@ public class NameFinderMain
 	public static void main( String[] args ) throws Exception
 	{
 		InputStream modelIn = new FileInputStream( "models/en-ner-person.model" );
-		// InputStream modelIn = new FileInputStream( "models/en-ner-person.bin" );
 		
 		try
 		{
@@ -58,16 +57,15 @@ public class NameFinderMain
 		}
 		finally
 		{
-			if( modelIn != null )
-			{
 				try
 				{
 					modelIn.close();
 				}
 				catch( IOException e )
 				{
+					e.printStackTrace();
 				}
-			}
+
 		}
 		
 		
@@ -75,12 +73,3 @@ public class NameFinderMain
 	}
 }
 
-/* 				
-				StringBuilder sb = new StringBuilder();
-				for( int i = ns.getStart(); i < ns.getEnd(); i++ )
-				{
-					sb.append( tokens[i] + " " );
-				}
-				
-				System.out.println( "The name is: " + sb.toString() );
- */
